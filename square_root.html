@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png);
+            
+        }
+
+        .main {
+            background-color: yellow;
+            width: 40%;
+            height: 200px;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        label {
+            font-weight: bolder;
+        }
+
+        p {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <h1>Square Root Calculator</h1>
+        <label for="num">Enter a number : </label>
+        <input type="number" name="" id="input" class="">
+        <button id="" onclick="btn()">Calculate</button>
+        <p id="output" class=""></p>
+    </div>
+
+    <script>
+
+        function btn() {
+            var input = document.getElementById("input").value;
+            var sqr = Math.sqrt(input);
+            document.getElementById("output").innerHTML = "The Square root of " + input + " is " + sqr;
+
+        };
+
+
+    </script>
+
+
+</body>
+
+</html>
